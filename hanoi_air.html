@@ -12,5 +12,12 @@
       var  waqiLayer  =  L.tileLayer(WAQI_URL,  {attribution:  WAQI_ATTR});  
   
       var  map  =  L.map('map').setView([21.0236,  105.8381],  11);  
+      
+      var mini_map_cb8fe35edec74166a7e937a75cb9379a = new L.Control.MiniMap(
+                tile_layer_793107c781094f1ba42cd200ab6d0ed4,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 100, "minimized": false, "position": "topright", "toggleDisplay": true, "width": 400, "zoomAnimation": false, "zoomLevelOffset": -4}
+            );
+            map_69c658aaafc34482af6c57ce211e8020.addControl(mini_map_cb8fe35edec74166a7e937a75cb9379a);
+      
       map.addLayer(osmLayer).addLayer(waqiLayer);  
 </script>
