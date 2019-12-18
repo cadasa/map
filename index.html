@@ -42,6 +42,12 @@
 <body>    
     
             <div class="folium-map" id="map_69c658aaafc34482af6c57ce211e8020" ></div>
+            <div  id='my-container'></div>  
+            <script  type="text/javascript"  charset="utf-8">  
+            _aqiFeed({  city:"beijing",  lang:"pl",  callback:function(aqi){  
+            $("#my-container").html(aqi.details);  
+            }  });  
+            </script>
         
 </body>
 <script>    
@@ -120,11 +126,5 @@
                         .openOn(map_69c658aaafc34482af6c57ce211e8020);
                     }
                 map_69c658aaafc34482af6c57ce211e8020.on('click', latLngPop);
-    <div  id='my-container'></div>  
-    <script  type="text/javascript"  charset="utf-8">  
-    _aqiFeed({  city:"beijing",  lang:"pl",  callback:function(aqi){  
-    $("#my-container").html(aqi.details);  
-    }  });  
-</script>
             
 </script>
